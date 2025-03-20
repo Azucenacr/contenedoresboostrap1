@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="es">
+
+</html>
+
+<head>
+    <meta charset="UTF-8"> <!-- Define la codificación de caracteres para admitir caracteres especiales -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Configura la página para que sea responsiva en dispositivos móviles -->
+    <meta name="description" content="bootstrap ejemplo">
+    <!-- Proporciona una breve descripción del contenido de la página -->
+    <meta name="author" content="Azucena Carreño"> <!-- Indica el autor del documento -->
+    <title>container en boost</title> <!-- Define el título de la pestaña del navegador -->
+    <!-- CSS de Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- JS de Bootstrap (opcional, para componentes interactivos) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+
+<body>
+
+    <!--1 fila con 2 columnas en un contenedor-->
+    <div class="container mt-4 text-center">
+        <!-- container es una clase de boostrap que muestra el contenido--><!-- mt- 4 significa margen superior -->
+        <div class="row"> <!--los pone en fila-->
+
+            <div class="col-md-6 bg-primary text-white">
+                <!--col columna. md-6 es pantalla mediana que ocupe 6 espacios. bg background, text- white el texto-->
+                <h2> Columna 1</h2>
+                <p>Contenido de la primera columna</p>
+            </div>
+
+            <div class="col-md-6 bg-secondary text-white ">
+                <h2>Columna 2</h2>
+                <p>Contenido de la segunda columna</p>
+            </div>
+        </div>
+    </div>
+
+    <!--ejercicio de 4 columnas-->
+    <div class="container mt-4 text-center">
+        <!-- container es una clase de boostrap que muestra el contenido--><!-- mt- 4 significa margen superior -->
+        <div class="row"> <!--los pone en fila-->
+
+            <div class="col-md-3 bg-primary text-white">
+                <!--col columna. md-6 es pantalla mediana que ocupe 6 espacios. bg background, text- white el texto-->
+                <h2> Columna 1</h2>
+                <p>Contenido de la primera columna</p>
+            </div>
+
+            <div class="col-md-3 bg-secondary text-white ">
+                <h2>Columna 2</h2>
+                <p>Contenido de la segunda columna</p>
+            </div>
+
+            <div class="col-md-3 bg-success text-white ">
+                <h2>Columna 3</h2>
+                <p>Contenido de la tercera columna</p>
+            </div>
+
+            <div class="col-md-3 bg-danger text-white ">
+                <h2>Columna 4</h2>
+                <p>Contenido de la cuarta columna</p>
+            </div>
+
+
+        </div>
+    </div>
+
+
+    <!--ejercicio de 2 columnas cada uno con 2 columnas internas-->
+    <div class="container mt-4 text-center"> <!--columna 1 y 2-->
+        <div class="row">
+
+            <!--parte de la columna 1-->
+            <div class="col-md-6 bg-info text-white"> <!--contenedor columna 1-->
+                <div class="row">
+                    <h2> Columna 1</h2>
+                    <!--contenedor columna 1 sub 1-->
+                    <div class="col-md-6">
+                        <h3> Columna interna 1</h3>
+                        <p>Contenido de la primera columna</p>
+                    </div> <!--cierre sub1-->
+
+                    <!--contenedor columna 1 sub 2-->
+
+                    <div class="col-md-6 ">
+                        <h3>Columna interna 2</h3>
+                        <p>Contenido de la segunda columna </p>
+                    </div> <!--cierre sub2-->
+                </div> <!--cierre row-->
+            </div><!--cierre primer div class columna1-->
+
+            <!-- parte de la columna 2-->
+            <div class="col-md-6 bg-warning text-white"> <!--contenedor columna 2-->
+                <div class="row">
+                    <h2> Columna 2</h2>
+                    <!--contenedor columna 2 sub 1-->
+                    <div class="col-md-6 ">
+                        <h3> Columna interna 1</h3>
+                        <p>Contenido de la primera columna</p>
+                    </div> <!--cierre sub1-->
+
+                    <!--contenedor columna 2 sub 2-->
+                    <div class="col-md-6 ">
+                        <h3>Columna interna 2</h3>
+                        <p>Contenido de la segunda columna </p>
+                    </div> <!--cierre sub1-->
+                </div><!--cierre row-->
+            </div> <!--cierre primer div class columna1-->
+
+
+
+        </div> <!--columna 1 y 2 cierre row-->
+    </div> <!-- cierre columna 1 y 2-->
+
+    <!--ejercico 3 columnas-->
+    <div class=" container mt-4 text-center">
+        <div class="row">
+
+            <div class="col-md-4 bg-primary text-white">
+                <!--col columna. md-6 es pantalla mediana que ocupe 6 espacios. bg background, text- white el texto-->
+                <h2> Columna 1</h2>
+                <p>Contenido de la primera columna</p>
+            </div>
+
+            <div class="col-md-4 bg-secondary text-white ">
+                <h2>Columna 2</h2>
+                <p>Contenido de la segunda columna</p>
+            </div>
+
+            <div class="col-md-4 bg-success text-white">
+                <!--col columna. md-6 es pantalla mediana que ocupe 6 espacios. bg background, text- white el texto-->
+                <h2> Columna 3</h2>
+                <p>Contenido de la tercera columna</p>
+            </div>
+
+
+        </div>
+    </div>
+
+
+    <!--1 fila a 2 columnas con un boton a la izquierda y una imagen en la segunda -->
+    <div class="container mt-4 text-center">
+        <div class="row">
+            <div class="col-md-6 bg-info text-white">
+                <h2> Columna de Texto</h2>
+                <p>Contenido textual que se muestra a la izquierda</p>
+                <button class="btn btn-danger btn-block"> Esto es un botón</button>
+
+            </div>
+
+
+            <div class="col-md-6 bg-warning text-white">
+                <h2>Columna de Imagen</h2>
+                <img src="img/aflogo.png" class="Img-fluid w-25 h-50">
+
+            </div>
+        </div> <!--cierre row-->
+    </div> <!--cierre del container-->
+
+
+    <!-- ejercicio 2 columnas -->
+    <div class="container mt-4 text-center">
+        <!-- container es una clase de boostrap que muestra el contenido--><!-- mt- 4 significa margen superior -->
+        <div class="row"> <!--los pone en fila-->
+
+            <div class="col-md-8 bg-primary text-white">
+                <!--col columna. md-6 es pantalla mediana que ocupe 6 espacios. bg background, text- white el texto-->
+                <h2> Columna Principal</h2>
+                <p>Este es el contenido principal</p>
+            </div>
+
+            <div class="col-md-4 bg-secondary text-white"> <!--contenedor columna 2-->
+                <div class="row">
+                    <!--contenedor columna 2 sub 1-->
+                    <div class="col-md-6 ">
+                        <h4>Subcolumna 1</h4>
+                        <p>Contenido de la primera subcolumna.</p>
+                    </div> <!--cierre sub1-->
+
+                    <!--contenedor columna 2 sub 2-->
+                    <div class="col-md-6 ">
+                        <h4>Subcolumna 2</h4>
+                        <p>Contenido de la segunda subcolumna.</p>
+                    </div> <!--cierre sub1-->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--ejercicio contenedor todo el tamaño-->
+    <div class="container-fluid mt-4 text-center">
+        <div class="row"> <!--los pone en fila-->
+
+            <div class="col-md-3 bg-primary text-white">
+                <!--col columna. md-6 es pantalla mediana que ocupe 6 espacios. bg background, text- white el texto-->
+                <h2> Columna 1</h2>
+                <p>Contenido de la primera columna</p>
+            </div>
+
+            <div class="col-md-3 bg-secondary text-white ">
+                <h2>Columna 2</h2>
+                <p>Contenido de la segunda columna</p>
+            </div>
+
+            <div class="col-md-3 bg-success text-white ">
+                <h2>Columna 3</h2>
+                <p>Contenido de la tercera columna</p>
+            </div>
+
+            <div class="col-md-3 bg-danger text-white ">
+                <h2>Columna 4</h2>
+                <p>Contenido de la cuarta columna</p>
+            </div>
+
+        </div>
+    </div>
+
+
+     <!--ejercicio de 2 columnas cada uno con 2 columnas internas-->
+     <div class="container-fluid mt-4 text-center"> <!--columna 1 y 2-->
+        <div class="row">
+
+            <!--parte de la columna 1-->
+            <div class="col-md-6 bg-info text-white"> <!--contenedor columna 1-->
+                <div class="row">
+                    <h2> Columna 1</h2>
+                    <!--contenedor columna 1 sub 1-->
+                    <div class="col-md-6">
+                        <h3> Columna interna 1</h3>
+                        <p>Contenido de la primera columna</p>
+                    </div> <!--cierre sub1-->
+
+                    <!--contenedor columna 1 sub 2-->
+
+                    <div class="col-md-6 ">
+                        <h3>Columna interna 2</h3>
+                        <p>Contenido de la segunda columna </p>
+                    </div> <!--cierre sub2-->
+                </div> <!--cierre row-->
+            </div><!--cierre primer div class columna1-->
+
+            <!-- parte de la columna 2-->
+            <div class="col-md-6 bg-warning text-white"> <!--contenedor columna 2-->
+                <div class="row">
+                    <h2> Columna 2</h2>
+                    <!--contenedor columna 2 sub 1-->
+                    <div class="col-md-6 ">
+                        <h3> Columna interna 1</h3>
+                        <p>Contenido de la primera columna</p>
+                    </div> <!--cierre sub1-->
+
+                    <!--contenedor columna 2 sub 2-->
+                    <div class="col-md-6 ">
+                        <h3>Columna interna 2</h3>
+                        <p>Contenido de la segunda columna </p>
+                    </div> <!--cierre sub1-->
+                </div><!--cierre row-->
+            </div> <!--cierre primer div class columna1-->
+
+
+
+        </div> <!--columna 1 y 2 cierre row-->
+    </div> <!-- cierre columna 1 y 2-->
+
+
+</body>
